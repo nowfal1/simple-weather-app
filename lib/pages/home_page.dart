@@ -14,29 +14,119 @@ class home_screen extends StatelessWidget {
 
         body: Padding(
           padding: const EdgeInsets.all(16.0),
-          child: Container(
-            width: 400.0,
-            height: 150.0,
-            decoration: BoxDecoration(
-              shape: BoxShape.rectangle,
-              borderRadius: BorderRadius.circular(10.0),
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.black26,
-                  offset: Offset(0, 2),
-                  blurRadius: 6.0,
+          child: Column(
+            children: [
+              Container(
+                width: 400.0,
+                height: 150.0,
+                decoration: BoxDecoration(
+                  shape: BoxShape.rectangle,
+                  borderRadius: BorderRadius.circular(10.0),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black26,
+                      offset: Offset(0, 2),
+                      blurRadius: 6.0,
+                    ),
+                  ],
+                  gradient: LinearGradient(
+                    colors: [Colors.blue, Colors.lightBlueAccent],
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                  ),
                 ),
-              ],
-              gradient: LinearGradient(
-                colors: [Colors.blue, Colors.lightBlueAccent],
-                begin: Alignment.topLeft,
-                end: Alignment.bottomRight,
+                child: ListTile(
+                  title: Text('USA'),
+                  subtitle: Text('San Francisco, CA'),
+                  leading: Icon(Icons.location_city, color: Colors.white),
+                  trailing: Column(
+                    children: [
+                      Icon(Icons.wb_sunny, color: Colors.white),
+                      Text(
+                        '25°C',
+                        style: TextStyle(color: Colors.white, fontSize: 18.0),
+                      ),
+                    ],
+                  ),
+                ),
               ),
-            ),
-            child: ListTile(
-              title: Text('USA'),
-              subtitle: Text('San Francisco, CA'),
-            ),
+              const SizedBox(height: 16.0),
+              Container(
+                width: 400.0,
+                height: 150.0,
+                decoration: BoxDecoration(
+                  shape: BoxShape.rectangle,
+                  borderRadius: BorderRadius.circular(10.0),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black26,
+                      offset: Offset(0, 2),
+                      blurRadius: 6.0,
+                    ),
+                  ],
+                  gradient: LinearGradient(
+                    colors: [Colors.blue, Colors.lightBlueAccent],
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                  ),
+                ),
+                child: ListTile(
+                  title: Text('Canada'),
+                  subtitle: Text('Toronto, ON'),
+                  leading: Icon(
+                    Icons.local_attraction_outlined,
+                    color: Colors.white,
+                  ),
+                  trailing: Column(
+                    children: [
+                      Icon(Icons.wb_cloudy_sharp, color: Colors.white),
+                      Text(
+                        '15°C',
+                        style: TextStyle(color: Colors.white, fontSize: 18.0),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              const SizedBox(height: 16.0),
+              Container(
+                width: 400.0,
+                height: 150.0,
+                decoration: BoxDecoration(
+                  shape: BoxShape.rectangle,
+                  borderRadius: BorderRadius.circular(10.0),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black26,
+                      offset: Offset(0, 2),
+                      blurRadius: 6.0,
+                    ),
+                  ],
+                  gradient: LinearGradient(
+                    colors: [Colors.blue, Colors.lightBlueAccent],
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                  ),
+                ),
+                child: ListTile(
+                  title: Text('Netherlands'),
+                  subtitle: Text('Amsterdam'),
+                  leading: Icon(
+                    Icons.flag,
+                    color: Colors.white,
+                  ),
+                  trailing: Column(
+                    children: [
+                      Icon(Icons.wb_twilight_outlined, color: Colors.white),
+                      Text(
+                        '45°C',
+                        style: TextStyle(color: Colors.white, fontSize: 18.0),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ],
           ),
         ),
       ),
