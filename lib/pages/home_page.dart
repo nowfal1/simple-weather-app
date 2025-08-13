@@ -111,10 +111,7 @@ class home_screen extends StatelessWidget {
                 child: ListTile(
                   title: Text('Netherlands'),
                   subtitle: Text('Amsterdam'),
-                  leading: Icon(
-                    Icons.flag,
-                    color: Colors.white,
-                  ),
+                  leading: Icon(Icons.flag, color: Colors.white),
                   trailing: Column(
                     children: [
                       Icon(Icons.wb_twilight_outlined, color: Colors.white),
